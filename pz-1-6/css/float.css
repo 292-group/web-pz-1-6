@@ -13,7 +13,7 @@ header {
     box-sizing: border-box;
 }
 header > h2 {
-    float: left;
+    float: left; 
     vertical-align: middle;
     margin: 0;
 }
@@ -72,10 +72,10 @@ header > .app-main-btn {
     width: 100%;
 }
 footer {
-    margin: 0 calc(var(--gutter-width) * 2);
-    height: var(--footer-height);
+    
+    bottom: 0;
+
     text-align: center;
-    overflow: auto;
-    box-sizing: border-box;
+
 }
 
