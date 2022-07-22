@@ -39,15 +39,22 @@ h2 {
   header > h2 > a {
     color: var(--title-color-table);
   }
+  header > nav > ul > li h2 {
+    color: var(--title-color-table);
+}
 
   header .app-nav-list > li a {
     color: var(--title-color-table);
   }
-
+  .content-nav > li > h2 > a  {
+    color:var(--title-color-table);
+  }
   header .app-main-btn {
     background: var(--button-color-table);
   }
-
+  .content-nav > li > a{
+    color: var(--title-color-table);
+  }
   h1 {
     color: var(--title-color-table);
   }
@@ -85,12 +92,16 @@ h2 {
   header > h2 > a {
     color: var(--title-color-desktop);
   }
-
   header .app-nav-list > li a {
     text-decoration: none;
     color: var(--title-color-desktop);
   }
-
+  .content-nav > li > h2 > a {
+    color:var(--title-color-desktop);
+  }
+  .content-nav > li > a{
+    color: var(--title-color-desktop);
+  }
   header .app-main-btn {
     background: var(--button-color-desktop);
   }
