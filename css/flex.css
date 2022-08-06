@@ -39,13 +39,16 @@ header , .app-main-btn ,.app-nav-list ,.app-navbar,.app-sidebar, footer , sectio
     margin-top: 0 var(--gutter-width) 0 0;
 }
 header{
-    justify-content: space-between;
     margin: var(--gutter-width) ;
 }
 .app-navbar{
+    width: 100%;
     align-items: center;
+    justify-content: space-between;
+ 
 }
 .app-nav-list{
+  
     justify-content: space-around;
     width: 100%;
 }
