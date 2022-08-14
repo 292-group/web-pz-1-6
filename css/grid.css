@@ -1,0 +1,56 @@
+body {
+  display: grid;
+  grid-template: "header"
+                  "main"
+                  "footer";
+}
+
+header {
+  grid-area: header;
+  display: grid;
+  grid-template: "logo button"
+                  "nav nav";
+}
+
+header > h2 {
+  grid-area: logo;
+}
+
+header > nav {
+  grid-area: nav;
+}
+
+header .sov-app-nav-list {
+  display: grid;
+  grid-template: "item item item";
+  position: relative;
+}
+
+header > .sov-app-main-btn {
+  grid-area: button;
+  position: absolute;
+  top: 23px;
+  right: 16px;
+}
+
+.sov-app-main-wrap {
+  grid-area: main;
+  display: grid;
+  grid-template: "content"
+                  "sidebar" 110px;
+}
+
+.sov-app-main-wrap .sov-app-main {
+  grid-area: content;
+}
+
+.sov-app-main-wrap .sov-app-sidebar {
+  grid-area: sidebar;
+}
+
+
+footer {
+  grid-area: footer;
+}
+
+

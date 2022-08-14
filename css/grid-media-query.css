@@ -1,0 +1,46 @@
+/*Small devices (landscape phones, 425px and up)*/
+@media (min-width: 450px) {
+  header {
+    grid-template: "logo nav button"/ auto 1fr auto;
+  }
+
+  header > nav {
+    margin-top: 15px;
+  }
+
+  header .sov-app-nav-list {
+    grid-template: "item item item" / 65px 65px 65px;
+  }
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+  header > h2{
+    margin-right: 20px;
+  }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+  .sov-app-main-wrap {
+    grid-template: "content sidebar" / 75% 20%;
+  }
+
+  header .sov-app-nav-list {
+    grid-template: "item item item" / 75px 75px 75px;
+  }
+
+  .sov-app-sidebar{
+    margin-left: 20px;
+  }
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+
+}
