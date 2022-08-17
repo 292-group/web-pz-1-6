@@ -1,14 +1,3 @@
-/*Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) {
-
-}
-
-/*Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) {
-
-
-}
-
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
   .app-main-wrap .app-main{
@@ -24,6 +13,11 @@
     height: 100%;
     margin:0 0 0 var(--gutter-width);
   }
+  .app-main-wrap .app-bg-cont img{
+    width: 100%;
+    max-width: 900px
+    /* padding-bottom: 50%; */
+}
 }
 
 /*Extra large devices (large desktops, 1200px and up)*/

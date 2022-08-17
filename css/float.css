@@ -65,17 +65,20 @@ header > .app-main-btn {
     padding: var(--gutter-width);
     margin-top: var(--gutter-width);
 }
-.app-main-wrap .desc {
-    margin: calc(var(--gutter-width) / 2) 0 var(--gutter-width);
-}
+
 .app-main-wrap .app-bg-cont img{
     width: 100%;
+    padding-bottom: 50%;
 }
 footer {
-    margin: 0 calc(var(--gutter-width) * 2);
-    height: var(--footer-height);
+    /* margin: 2 calc(var(--gutter-width) * 2); */
+    /* height: var(--footer-height); */
+    /* padding: 10px 0; */
     text-align: center;
-    overflow: auto;
-    box-sizing: border-box;
+    clear: both;
+    padding: 10%;
+
 }
+
+
 
