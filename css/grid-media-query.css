@@ -7,7 +7,7 @@
       margin-top: 15px;
     }
   
-    header .sov-app-nav-list {
+    header .app-nav-list {
       grid-template: "item item item" / 65px 65px 65px;
     }
   }
@@ -23,7 +23,7 @@
       grid-template: "content sidebar" / 75% 20%;
     }
   
-    header .sov-app-nav-list {
+    header .app-nav-list {
       grid-template: "item item item" / 75px 75px 75px;
     }
   

@@ -20,31 +20,31 @@ body {
     grid-area: nav;
   }
   
-  header .sov-app-nav-list {
+  header .app-nav-list {
     display: grid;
     grid-template: "item item item";
     position: relative;
   }
   
-  header > .sov-app-main-btn {
+  header > .app-main-btn {
     grid-area: button;
     position: absolute;
     top: 23px;
     right: 16px;
   }
   
-  .sov-app-main-wrap {
+  .app-main-wrap {
     grid-area: main;
     display: grid;
     grid-template: "content"
                     "sidebar" 110px;
   }
   
-  .sov-app-main-wrap .sov-app-main {
+  .app-main-wrap .app-main {
     grid-area: content;
   }
   
-  .sov-app-main-wrap .sov-app-sidebar {
+  .app-main-wrap .app-sidebar {
     grid-area: sidebar;
   }
   

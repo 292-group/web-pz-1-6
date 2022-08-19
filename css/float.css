@@ -47,7 +47,6 @@ header > .app-main-btn {
     float: right;
 }
 
-/*main*/
 .app-main-wrap {
     margin: 0 calc(var(--gutter-width) * 2);
     height: calc(100% - var(--header-height) - var(--footer-height));

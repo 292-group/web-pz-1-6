@@ -17,11 +17,11 @@ html {
     margin-top: 5px;
   }
   
-  header .sov-app-main-btn {
+  header .app-main-btn {
     position: relative;
   }
   
-  .sov-app-nav-list{
+  .app-nav-list{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -31,7 +31,7 @@ html {
     margin-bottom: 10px;
   }
   
-  .sov-app-main-wrap{
+  .app-main-wrap{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
