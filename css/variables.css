@@ -1,6 +1,6 @@
 :root {
   --title-color-mobile: red;
-  --title-color-table: green;
+  --title-color-table: rgb(159, 1, 250);
   --title-color-desktop: blue;
 
   --button-color-mobile: blue;
