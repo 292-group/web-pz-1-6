@@ -1,0 +1,108 @@
+*{
+    font-family: 'Finlandica' , sans-serif;
+}
+
+header {
+    display: flex;
+     
+
+
+
+
+}
+
+header>h2>a {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    flex: 1 1 auto
+}
+
+header .app-nav-list>li a {
+    text-decoration: none;
+
+}
+
+header .app-main-btn {
+    border: none;
+    padding: calc(var(--gutter-width) / 2) var(--gutter-width);
+    color: white;
+    text-transform: uppercase;
+}
+.app-mobile{width: 100%;}
+.app-desktop{
+    width: 100%;
+}
+.app-table{
+    width: 100%;
+}
+.app-nav-list {
+    display: flex;
+    padding: 0 0 0 20px;
+
+}
+
+.app-title {
+    display: flex;
+    flex-direction: column
+}
+.box_main-app{
+    display: flex;
+    flex-direction: column;
+}
+.fx-app-main{
+    align-self: center;
+}
+ 
+.lorem{align-self: center;}
+.app-sidebar {
+    border: 2px solid black;
+}
+nav h2{ font-weight: 700;}
+
+
+.app-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.tou_footer {
+    align-self: center;
+}
+
+.lorem {
+    align-self: center;
+}
+
+body {
+    display: flex;
+    border: 3px solid rebeccapurple;
+    flex-direction: column;
+
+}
+
+.fx-footer {
+     
+    align-self: center;
+}
+
+.app-main-wrap .app-sidebar {
+    border: 1px solid #000;
+
+    width: 100%;
+
+    padding: var(--gutter-width);
+    margin-top: var(--gutter-width);
+}
+.fx-app-main h1 {
+    font-weight: 700;
+    align-self: center;
+
+}
+footer h2{
+    font-weight: 700;
+}
