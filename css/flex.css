@@ -12,8 +12,9 @@
   margin-top: 63px;
 }
 
-.header .button {
+.button {
   position: relative;
+  align-items: flex-start;
 }
 
 .app-nav-list{

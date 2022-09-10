@@ -27,11 +27,11 @@ body {
     position: relative;
   }
   
-  .header > .button {
+   .button {
     grid-area: button;
     position: absolute;
-    top: 23px;
-    right: 16px;
+    top: 64px;
+    left: 16px;
   }
   
   .app-main {
