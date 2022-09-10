@@ -78,4 +78,3 @@ Scripts should be placed before closing body tag.
 * [Практическое применение FlexBox](https://habr.com/ru/post/242545/).
 
 
-git

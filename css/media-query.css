@@ -1,11 +1,51 @@
 /* Extra small devices (portrait phones, less than 576px)*/
 /* No media query for `xs` since this is the default in Bootstrap*/
 /*utils*/
+html {
+  margin: 0;
+  font-size: 14px;
+  font-family: Arial;
+  height: 100%;
+}
+
+* {
+  font-size: 12px;
+  font-family: Arial;
+  box-sizing: border-box;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+ul > li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  line-height: 1.7;
+  text-align: center;
+}
+
+body {
+  height: 100%;
+  width: var(--width-center);
+  margin: 0 auto;
+  position: relative;
+}
+
 h1 {
   font-size: 32px;
   font-weight: bold;
   color: var(--title-color-mobile);
   margin: calc(var(--gutter-width) / 2) 0 var(--gutter-width);
+  text-align: center;
 }
 
 h2 {
@@ -14,6 +54,7 @@ h2 {
   font-weight: bold;
   color: var(--title-color-mobile);
 }
+
 h3 {
   font-size: calc(14px + 1vh);
   margin: calc(var(--gutter-width) / 2) 0 var(--gutter-width);
@@ -21,8 +62,74 @@ h3 {
   color: var(--title-color-mobile);
 }
 
-.app-table, .app-desktop {
+.sov-app-main-btn {
+  border: none;
+  padding: calc(var(--gutter-width) / 2) var(--gutter-width);
+  width: fit-content;
+  height: fit-content;
+  background: var(--button-color-mobile);
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  user-select: none;
+  margin: 5px;
+}
+
+header {
+  padding: var(--gutter-width) calc(var(--gutter-width) * 2);
+  height: var(--header-height);
+  min-height: 150px;
+  width: 100%;
+  color: var(--title-color-mobile);
+}
+
+header > h2 > a{
+  font-size: 24px;
+  font-weight: bold;
+}
+
+header .sov-app-nav-list > li{
+  margin-left: 5px;
+  min-width: fit-content;
+}
+
+header .sov-app-main-btn {
+  background-color: var(--button-color-mobile);
+}
+
+.sov-app-main-wrap .sov-app-main .sov-app-bg-cont img{
+  width: 100%;
+}
+
+.sov-clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.sov-app-bg-cont img{
+  margin: 20px 0;
+}
+
+footer{
+  text-align: center;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+.sov-app-sidebar{
+  border: 1px solid #000;
+  padding: var(--gutter-width);
+  width: var(--width-center);
+}
+
+.sov-app-table, .sov-app-desktop {
   display: none;
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+
 }
 
 /*Medium devices (tablets, 768px and up)*/
@@ -31,11 +138,11 @@ h3 {
     color: var(--title-color-table);
   }
 
-  header .app-nav-list > li a {
+  header .sov-app-nav-list > li a {
     color: var(--title-color-table);
   }
 
-  header .app-main-btn {
+  header .sov-app-main-btn {
     background: var(--button-color-table);
   }
 
@@ -46,15 +153,12 @@ h3 {
   h2 {
     color: var(--title-color-table);
   }
-  h3 {
-    color: var(--title-color-table);
-  }
 
-  .app-mobile {
+  .sov-app-mobile {
     display: none;
   }
 
-  .app-table {
+  .sov-app-table {
     display: inline;
   }
 
@@ -62,27 +166,20 @@ h3 {
 
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
-  .app-table {
+  .sov-app-table {
     display: none;
   }
 
-  .app-desktop {
-    display: inline;
-  }
-}
-
-/*Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) {
   header > h2 > a {
     color: var(--title-color-desktop);
   }
 
-  header .app-nav-list > li a {
+  header .sov-app-nav-list > li a {
     text-decoration: none;
     color: var(--title-color-desktop);
   }
 
-  header .app-main-btn {
+  header .sov-app-main-btn {
     background: var(--button-color-desktop);
   }
 
@@ -93,7 +190,15 @@ h3 {
   h2 {
     color: var(--title-color-desktop);
   }
-  h3 {
-    color: var(--title-color-desktop);
+
+  .sov-app-desktop {
+    display: inline;
+    float: left;
+    height: calc(100vh - var(--footer-height) - var(--header-height) - var(--title-height));
   }
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+
 }
