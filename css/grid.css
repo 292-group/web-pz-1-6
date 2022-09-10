@@ -1,56 +1,54 @@
 body {
-    display: grid;
-    grid-template: "header"
-                    "main"
-                    "footer";
-  }
-  
-  header {
-    grid-area: header;
-    display: grid;
-    grid-template: "logo button"
-                    "nav nav";
-  }
-  
-  header > h2 {
-    grid-area: logo;
-  }
-  
-  header > nav {
-    grid-area: nav;
-  }
-  
-  header .app-nav-list {
-    display: grid;
-    grid-template: "item item item";
-    position: relative;
-  }
-  
-  header > .app-main-btn {
-    grid-area: button;
-    position: absolute;
-    top: 23px;
-    right: 16px;
-  }
-  
-  .app-main-wrap {
-    grid-area: main;
-    display: grid;
-    grid-template: "content"
-                    "sidebar" 110px;
-  }
-  
-  .app-main-wrap .app-main {
-    grid-area: content;
-  }
-  
-  .app-main-wrap .app-sidebar {
-    grid-area: sidebar;
-  }
-  
-  
-  footer {
-    grid-area: footer;
-  }
-  
-  
+  display: grid;
+  grid-template: "header"
+                  "main"
+                  "footer";
+}
+
+header {
+  grid-area: header;
+  display: grid;
+  grid-template: "logo button"
+                  "nav nav";
+}
+
+header > h2 {
+  grid-area: logo;
+}
+
+header > nav {
+  grid-area: nav;
+}
+
+header .sav-app-nav-list {
+  display: grid;
+  grid-template: "item item item";
+  position: relative;
+}
+
+header > .sav-app-main-btn {
+  grid-area: button;
+  top: 23px;
+  right: 16px;
+}
+
+.sav-app-main-wrap {
+  grid-area: main;
+  display: grid;
+  grid-template: "content"
+                  "sidebar" 110px;
+}
+
+.sav-app-main-wrap .sav-app-main {
+  grid-area: content;
+}
+
+.sav-app-main-wrap .sav-app-sidebar {
+  grid-area: sidebar;
+}
+
+
+footer {
+  grid-area: footer;
+}
+

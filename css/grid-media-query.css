@@ -1,41 +1,41 @@
 @media (min-width: 450px) {
-    header {
-      grid-template: "logo nav button"/ auto 1fr auto;
-    }
-  
-    header > nav {
-      margin-top: 15px;
-    }
-  
-    header .app-nav-list {
-      grid-template: "item item item" / 65px 65px 65px;
-    }
+  header {
+    grid-template: "logo nav button"/ auto 1fr auto;
   }
-  
-  @media (min-width: 576px) {
-    header > h2{
-      margin-right: 20px;
-    }
+
+  header > nav {
+    margin-top: 15px;
   }
-  
-  @media (min-width: 768px) {
-    .sov-app-main-wrap {
-      grid-template: "content sidebar" / 75% 20%;
-    }
-  
-    header .app-nav-list {
-      grid-template: "item item item" / 75px 75px 75px;
-    }
-  
-    .sov-app-sidebar{
-      margin-left: 20px;
-    }
+
+  header .sav-app-nav-list {
+    grid-template: "item item item" / 65px 65px 65px;
   }
-  
-  @media (min-width: 992px) {
-  
+}
+
+@media (min-width: 576px) {
+  header > h2{
+    margin-right: 20px;
   }
-  
-  @media (min-width: 1200px) {
-  
+}
+
+@media (min-width: 768px) {
+  .sav-app-main-wrap {
+    grid-template: "content sidebar" / 75% 20%;
   }
+
+  header .sav-app-nav-list {
+    grid-template: "item item item" / 75px 75px 75px;
+  }
+
+  .sav-app-sidebar{
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 1200px) {
+
+}
