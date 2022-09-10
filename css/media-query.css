@@ -97,7 +97,7 @@ header .app-nav-list > li{
   display: table;
 }
 
-.header .button {
+.button {
   background-color: var(--button-color-mobile);
 }
 
@@ -169,7 +169,7 @@ header .app-nav-list > li{
     color: var(--title-color-table);
   }
 
-  header .app-main-btn {
+  .app-main-btn {
     background: var(--button-color-table);
   }
 
@@ -181,7 +181,7 @@ header .app-nav-list > li{
     color: var(--title-color-table);
   }
 
-  .header .button {
+  .button {
     background-color: var(--button-color-table);
   }
 
@@ -224,7 +224,7 @@ header .app-nav-list > li{
     color: var(--title-color-desktop);
   }
 
-  header .app-main-btn {
+ .app-main-btn {
     background: var(--button-color-desktop);
   }
 
@@ -236,7 +236,7 @@ header .app-nav-list > li{
     color: var(--title-color-desktop);
   }
 
-  .header .button {
+  .button {
     background-color: var(--button-color-desktop);
   }
 }
