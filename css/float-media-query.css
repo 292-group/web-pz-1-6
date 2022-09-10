@@ -27,6 +27,6 @@
 }
 
 /*Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) {
+@media (min-width: 1200px){ .app-main-wrap .app-sidebar{height: 120;}
 
 }

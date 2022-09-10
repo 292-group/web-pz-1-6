@@ -59,7 +59,7 @@ header > .app-main-btn {
 }
 .app-main-wrap .app-sidebar{
     border: 1px solid #000;
-    float: left;
+    
     width: 100%;
     box-sizing: border-box;
     padding: var(--gutter-width);
@@ -72,10 +72,11 @@ header > .app-main-btn {
     width: 100%;
 }
 footer {
-    margin: 0 calc(var(--gutter-width) * 2);
+   
+    margin: var(--gutter-width) 0;
     height: var(--footer-height);
     text-align: center;
-    overflow: auto;
-    box-sizing: border-box;
+   
+    
 }
 
