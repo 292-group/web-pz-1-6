@@ -1,0 +1,35 @@
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 320px) {
+  .app-sidebar{
+ width: 100vw;
+  }
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+  .app-main-wrap{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 100%;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+
+  .app-main{
+    width: 80vw;
+  }
+
+  .app-sidebar{
+    display: flex;
+    width: 20vw;
+    align-content: stretch;
+  }
+
+  .app-main-wrap .app-bg-cont img{
+    width: 100%;
+    max-width: 900px
+    /* padding-bottom: 50%; */
+}
+}
+
