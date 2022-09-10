@@ -1,7 +1,7 @@
 /*Small devices (landscape phones, 425px and up)*/
 @media (min-width: 450px) {
   header {
-    grid-template: "logo nav button"/ auto 1fr auto;
+    grid-template: "button logo nav "/ auto 1fr auto;
   }
 
   header > nav {
@@ -22,8 +22,11 @@
 
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
+  header {
+    grid-template: "button logo nav "/ auto 1fr auto;
+  }
   .sov-app-main-wrap {
-    grid-template: "content sidebar" / 75% 20%;
+    grid-template: "sidebar content " / 20% 75%;
   }
 
   header .sov-app-nav-list {
@@ -37,7 +40,9 @@
 
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
-
+  header {
+    grid-template: "button logo nav "/ auto 1fr auto;
+  }
 }
 
 /*Extra large devices (large desktops, 1200px and up)*/

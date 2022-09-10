@@ -120,7 +120,7 @@ footer{
 .sov-app-sidebar{
   border: 1px solid #000;
   padding: var(--gutter-width);
-  width: var(--width-center);
+  /* width: var(--width-center); */
 }
 
 .sov-app-table, .sov-app-desktop {
