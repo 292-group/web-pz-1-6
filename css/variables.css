@@ -1,11 +1,11 @@
 :root {
   --title-color-mobile: red;
-  --title-color-table: green;
+  --title-color-table: rgb(126, 0, 128);
   --title-color-desktop: rgb(2, 2, 21);
 
   --button-color-mobile: sov-app-main-btnrgb(14, 14, 220);
-  --button-color-table: rgb(112, 42, 165);
-  --button-color-desktop: rgb(4, 255, 0);
+  --button-color-table: rgb(42, 165, 85);
+  --button-color-desktop: rgb(255, 0, 242);
 
   --gutter-width: 20px;
   --header-height: 100px;
