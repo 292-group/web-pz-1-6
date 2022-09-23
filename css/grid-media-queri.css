@@ -13,10 +13,12 @@
       .app-sidebar{
         margin:0 var(--gutter-width);
       }
+      .content-nav li a {color: var(--title-color-table); }
 }
 
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
+
    
 }
 /*Extra large devices (large desktops, 1200px and up)*/
@@ -28,4 +30,5 @@
       .app-sidebar{
         margin:0 var(--gutter-width);
       }
+      .content-nav li a {color: var(--title-color-desktop); }
 }

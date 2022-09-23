@@ -19,7 +19,9 @@ header>h2>a {
 
 nav {
     display: flex;
-    flex: 1 1 auto
+    flex: 2 2 auto;
+    margin: 0 -5px;
+    
 }
 
 header .app-nav-list>li a {
@@ -44,6 +46,10 @@ header .app-main-btn {
     display: flex;
     padding: 0 0 0 20px;
 
+}
+section h1 {
+    font-size: 32px
+    
 }
 
 .app-title {
@@ -80,7 +86,6 @@ nav h2{ font-weight: 700;}
 
 body {
     display: flex;
-    border: 3px solid rebeccapurple;
     flex-direction: column;
 
 }
@@ -105,4 +110,11 @@ body {
 }
 footer h2{
     font-weight: 700;
+    font-size: 32px;
+}
+nav h2 {
+    font-weight: 700;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
 }

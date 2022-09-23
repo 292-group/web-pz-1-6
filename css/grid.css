@@ -86,3 +86,4 @@ footer{
     height: var(--footer-height);
     margin: var(--gutter-width) 0 0;
 }
+.logo h2{color: aquamarine;}

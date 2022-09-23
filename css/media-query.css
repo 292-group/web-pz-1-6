@@ -60,7 +60,7 @@ h2 {
   .app-table {
     display: inline;
   }
-
+.logo a{ color: var(--title-color-table);}
 }
 
 /*Large devices (desktops, 992px and up)*/
@@ -96,4 +96,5 @@ h2 {
   h2 {
     color: var(--title-color-desktop);
   }
+  
 }
