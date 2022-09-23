@@ -1,37 +1,28 @@
-html {
-  margin: 0;
-  font-size: 14px;
-  font-family: Arial;
-  height: 100%;
-}
-
-header {
+.header {
   display: flex;
   flex-wrap: nowrap;
   align-items: flex-start;
   justify-content: space-evenly;
 }
-
-header > nav {
+.header > nav {
   width: 100%;
-  margin-top: 5px;
+  margin-top: 63px;
 }
 
-header .sov-app-main-btn {
+.header .button {
   position: relative;
 }
 
-.sov-app-nav-list{
+.app-nav-list{
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-left: var(--gutter-width);
   justify-content: space-evenly;
   margin-right: 10px;
   margin-bottom: 10px;
 }
 
-.sov-app-main-wrap{
+.app-main{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -39,7 +30,7 @@ header .sov-app-main-btn {
   height: 100%;
 }
 
-footer{
+.footer{
   display: flex;
   flex-direction: column;
   align-items: center;

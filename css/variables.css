@@ -6,11 +6,11 @@
   --button-color-mobile: blue;
   --button-color-table: brown;
   --button-color-desktop: red;
+  --button-color-all: gold;
 
   --gutter-width: 20px;
   --header-height: 100px;
   --footer-height: 100px;
-  --title-height: 150px;
 
-  --width-center: 85vw;
+  --container-width-mobile: 85vw;
 }

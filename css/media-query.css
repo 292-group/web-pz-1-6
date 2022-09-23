@@ -1,13 +1,6 @@
 /* Extra small devices (portrait phones, less than 576px)*/
 /* No media query for `xs` since this is the default in Bootstrap*/
 /*utils*/
-html {
-  margin: 0;
-  font-size: 14px;
-  font-family: Arial;
-  height: 100%;
-}
-
 * {
   font-size: 12px;
   font-family: Arial;
@@ -30,26 +23,21 @@ a {
 
 p {
   line-height: 1.7;
-  text-align: center;
 }
 
 body {
-  height: 100%;
-  width: var(--width-center);
-  margin: 0 auto;
-  position: relative;
+  height: 100%;  
 }
 
 h1 {
-  font-size: 32px;
+  font-size: calc(20px + 2vw);
   font-weight: bold;
   color: var(--title-color-mobile);
   margin: calc(var(--gutter-width) / 2) 0 var(--gutter-width);
-  text-align: center;
 }
 
 h2 {
-  font-size: 24px;
+  font-size: calc(14px + 2vh);
   margin: calc(var(--gutter-width) / 2) 0 var(--gutter-width);
   font-weight: bold;
   color: var(--title-color-mobile);
@@ -62,7 +50,7 @@ h3 {
   color: var(--title-color-mobile);
 }
 
-.sov-app-main-btn {
+.button {
   border: none;
   padding: calc(var(--gutter-width) / 2) var(--gutter-width);
   width: fit-content;
@@ -75,7 +63,18 @@ h3 {
   margin: 5px;
 }
 
-header {
+.button:active,
+.button:focus,
+.button:hover {
+  border: none;
+  outline: none;
+}
+.button:hover {
+  box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.404);
+  color: var(--title-color-mobile);
+}
+
+.header {
   padding: var(--gutter-width) calc(var(--gutter-width) * 2);
   height: var(--header-height);
   min-height: 150px;
@@ -83,53 +82,84 @@ header {
   color: var(--title-color-mobile);
 }
 
-header > h2 > a{
+.header > h2 > a{
   font-size: 24px;
   font-weight: bold;
 }
 
-header .sov-app-nav-list > li{
+
+
+header .app-nav-list > li{
   margin-left: 5px;
   min-width: fit-content;
 }
 
-header .sov-app-main-btn {
-  background-color: var(--button-color-mobile);
-}
-
-.sov-app-main-wrap .sov-app-main .sov-app-bg-cont img{
-  width: 100%;
-}
-
-.sov-clearfix::after {
+.clearfix::after {
   content: "";
   clear: both;
   display: table;
 }
 
-.sov-app-bg-cont img{
+.header .button {
+  background-color: var(--button-color-mobile);
+}
+
+.app-main .content .image-wrapper img{
+  width: 100%;
+}
+
+.container{
+  width: var(--container-width-mobile);
+  margin: 0 auto;
+  position: relative;
+}
+
+.content-title,
+.content-description {
+  text-align: center;
+}
+
+.app-sidebar{
+  border: 1px solid #000;
+  padding: var(--gutter-width);
+  width: var(--container-width-mobile);
+}
+
+.image-wrapper img{
+  width: var(--container-width-mobile);
   margin: 20px 0;
 }
 
-footer{
+.app-tablet, .app-desktop {
+  display: none;
+}
+
+.app-mobile {
+  display: inline;
+}
+
+.footer{
   text-align: center;
+  width: var(--container-width-mobile);
   padding: 0 30px;
   margin: 0 auto;
 }
 
-.sov-app-sidebar{
-  border: 1px solid #000;
-  padding: var(--gutter-width);
-  width: var(--width-center);
-}
-
-.sov-app-table, .sov-app-desktop {
-  display: none;
+@media (min-width: 450px) {
+  .header > nav {
+    margin-top: 7px;
+  }
 }
 
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
+  .app-tablet {
+    display: none;
+  }
 
+  .app-mobile {
+    display: inline;
+  }
 }
 
 /*Medium devices (tablets, 768px and up)*/
@@ -138,11 +168,11 @@ footer{
     color: var(--title-color-table);
   }
 
-  header .sov-app-nav-list > li a {
+  header .app-nav-list > li a {
     color: var(--title-color-table);
   }
 
-  header .sov-app-main-btn {
+  header .app-main-btn {
     background: var(--button-color-table);
   }
 
@@ -154,32 +184,50 @@ footer{
     color: var(--title-color-table);
   }
 
-  .sov-app-mobile {
+  .header .button {
+    background-color: var(--button-color-table);
+  }
+
+  .app-main .content {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .app-sidebar{
+    width: 25vw;
+  }
+
+  .app-mobile {
     display: none;
   }
 
-  .sov-app-table {
+  .app-tablet {
     display: inline;
   }
 
+  
 }
 
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
-  .sov-app-table {
+  .app-tablet {
     display: none;
+  }
+
+  .app-desktop {
+    display: inline;
   }
 
   header > h2 > a {
     color: var(--title-color-desktop);
   }
 
-  header .sov-app-nav-list > li a {
+  header .app-nav-list > li a {
     text-decoration: none;
     color: var(--title-color-desktop);
   }
 
-  header .sov-app-main-btn {
+  header .app-main-btn {
     background: var(--button-color-desktop);
   }
 
@@ -191,14 +239,12 @@ footer{
     color: var(--title-color-desktop);
   }
 
-  .sov-app-desktop {
-    display: inline;
-    float: left;
-    height: calc(100vh - var(--footer-height) - var(--header-height) - var(--title-height));
+  .header .button {
+    background-color: var(--button-color-desktop);
   }
 }
 
 /*Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
-
+  
 }
