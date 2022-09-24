@@ -22,14 +22,14 @@
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
   .app-main .content{
-    float: left;
+    float: right;
     width: calc(75% - var(--gutter-width));
     height: 100%;
     margin:0 var(--gutter-width) 0 0;
   }
 
   .app-main .app-sidebar{
-    float: left;
+    float: right;
     width: calc(25% - var(--gutter-width));
     height: 720px;
   }

@@ -120,6 +120,7 @@ header .app-nav-list > li{
 }
 
 .app-sidebar{
+  position: relative;
   border: 1px solid #000;
   padding: var(--gutter-width);
   width: var(--container-width-mobile);
