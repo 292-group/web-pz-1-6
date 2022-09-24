@@ -6,7 +6,6 @@
     float: left;
     width: 100%;
   }
-  
   .header > nav {
     float: left;
     width: fit-content;
@@ -28,6 +27,9 @@
   
   /* main*/
   .app-main{
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
     height: 100%;
   }
   
