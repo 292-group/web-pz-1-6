@@ -36,8 +36,9 @@ body {
 .app-main {
   grid-area: main;
   display: grid;
-  grid-template: "content"
-                  "sidebar" 110px;
+  grid-template: "sidebar"
+                 "content"110px;
+                   
 }
 
 .app-main .content {

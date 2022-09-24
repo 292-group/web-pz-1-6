@@ -23,7 +23,7 @@
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
   .app-main {
-    grid-template: "content sidebar" / 75% 20%;
+    grid-template: "sidebar content " ;
   }
 
   .header .app-nav-list {
