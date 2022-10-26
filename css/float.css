@@ -4,6 +4,14 @@ html {
     font-family: Arial;
     height: 100%;
 }
+body {
+    height: 100%;
+}
+header {
+    padding: var(--gutter-width) calc(var(--gutter-width) * 2);
+    height: var(--header-height);
+    box-sizing: border-box;
+}
 header > h2 {
     float: left;
     vertical-align: middle;
@@ -20,30 +28,36 @@ header > nav {
     margin-top: 7px;
 }
 
-header .sov-app-nav-list > li{
+header .app-nav-list > li{
     float: left;
     margin-left: var(--gutter-width);
 }
-header .sov-app-nav-list > li a {
+header .app-nav-list > li a {
     text-decoration: none;
     color: var(--title-color-mobile);
 }
-
-header > .sov-app-main-btn {
+header .app-main-btn {
+    border: none;
+    padding: calc(var(--gutter-width) / 2) var(--gutter-width);
+    background: var(--button-color-mobile);
+    color: white;
+    text-transform: uppercase;
+}
+header > .app-main-btn {
     float: right;
 }
 
 /*main*/
-.sov-app-main-wrap {
+.app-main-wrap {
     margin: 0 calc(var(--gutter-width) * 2);
     height: calc(100% - var(--header-height) - var(--footer-height));
     box-sizing: border-box;
 }
-.sov-app-main-wrap .sov-app-main{
+.app-main-wrap .app-main{
     text-align: center;
     width: 100%;
 }
-.sov-app-main-wrap .sov-app-sidebar{
+.app-main-wrap .app-sidebar{
     border: 1px solid #000;
     float: left;
     width: 100%;
@@ -51,15 +65,20 @@ header > .sov-app-main-btn {
     padding: var(--gutter-width);
     margin-top: var(--gutter-width);
 }
-.sov-app-main-wrap .sov-desc {
-    margin: calc(var(--gutter-width) / 2) 0 var(--gutter-width);
+
+.app-main-wrap .app-bg-cont img{
+    width: 100%;
+    padding-bottom: 50%;
+}
+footer {
+    /* margin: 2 calc(var(--gutter-width) * 2); */
+    /* height: var(--footer-height); */
+    /* padding: 10px 0; */
+    text-align: center;
+    clear: both;
+    padding: 10%;
+
 }
 
-footer {
-    margin: 0 calc(var(--gutter-width) * 2);
-    height: var(--footer-height);
-    text-align: center;
-    overflow: auto;
-    box-sizing: border-box;
-}
+
 

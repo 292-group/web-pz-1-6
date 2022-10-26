@@ -1,28 +1,23 @@
-/*Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) {
-
-}
-
-/*Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) {
-
-}
-
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
-  .sov-app-main-wrap .sov-app-main{
+  .app-main-wrap .app-main{
     float: left;
     width: calc(75% - var(--gutter-width));
     height: 100%;
     margin:0 var(--gutter-width) 0 0;
   }
 
-  .sov-app-main-wrap .sov-app-sidebar{
+  .app-main-wrap .app-sidebar{
     float: left;
     width: calc(25% - var(--gutter-width));
     height: 100%;
     margin:0 0 0 var(--gutter-width);
   }
+  .app-main-wrap .app-bg-cont img{
+    width: 100%;
+    max-width: 900px
+    /* padding-bottom: 50%; */
+}
 }
 
 /*Extra large devices (large desktops, 1200px and up)*/
