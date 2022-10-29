@@ -1,12 +1,12 @@
 :root {
-  --title-color-mobile: pink;
-  --title-color-table: pink;
-  --title-color-desktop: pink;
+  --title-color-mobile: blue;
+  --title-color-table: yellow;
+  --title-color-desktop: darkred;
 
-  --button-color-mobile: pink;
-  --button-color-table: pink;
-  --button-color-desktop: pink;
-  --button-color-all: pink;
+  --button-color-mobile: blue;
+  --button-color-table: yellow;
+  --button-color-desktop: darkred;
+  --button-color-all: black;
 
   --gutter-width: 20px;
   --header-height: 100px;
