@@ -1,0 +1,27 @@
+@media (min-width: 576px) {
+}
+@media (min-width: 768px) {
+}
+@media (max-width: 768px) {
+    .app-navbar{
+      background-color: aqua;
+    }
+}
+@media (min-width: 992px) {
+    section{
+    display: flex;
+    }
+    .app-sidebar{
+     width: 100%;
+    }
+    .app-content{
+      height: 250px;
+    }
+    }
+    
+    
+@media (min-width: 1200px) {
+      .app-content{
+        height: 100px;
+      }
+    }

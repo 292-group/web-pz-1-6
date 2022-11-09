@@ -6,24 +6,23 @@
   <title>PZ_1_6</title>
   <link rel="stylesheet" type="text/css" href="./css/reset.css">
   <link rel="stylesheet" type="text/css" href="./css/variables.css">
-  <link rel="stylesheet" type="text/css" href="./css/float.css">
+  <link rel="stylesheet" type="text/css" href="./css/grid.css">
   <link rel="stylesheet" type="text/css" href="./css/media-query.css">
-  <link rel="stylesheet" type="text/css" href="./css/float-media-query.css">
+  <link rel="stylesheet" type="text/css" href="./css/grid-media-query.css">
 </head>
 <body>
-<header>
-  <h2><a href="#">Header</a></h2>
-  <nav>
-    <ul class="app-nav-list">
-      <li><a href="#">nav link 1</a></li>
-      <li><a href="#">nav link 2</a></li>
-      <li><a href="#">nav link 3</a></li>
-    </ul>
-  </nav>
-  <button class="app-main-btn">button</button>
-  <div class="clearfix"></div>
-</header>
-<div class="app-main-wrap">
+  <header>
+      <nav class="nav-checkbox">
+          <ul class="content-nav">
+           <li> <h2 class="logo"><a href="#">Header</a></h2></li>
+            <li><a href="#">nav link 1</a></li>
+            <li><a href="#">nav link 2</a></li>
+            <li><a href="#">nav link 3</a></li>
+          </ul>
+         <div class="app-btn"> <button class="app-main-btn">button</button> </div>
+      </nav>
+  </header>
+  <div class="app-main-wrap">
   <section class="app-main">
     <h1>Title layout</h1>
     <p class="desc">
@@ -38,17 +37,19 @@
       <img class="app-mobile" src="./img/main-mobile.jpeg" alt="main-mobile img">
       <img class="app-table" src="./img/main-table.jpg" alt="main-table img">
       <img class="app-desktop" src="./img/main-desktop.jpg" alt="main-desktop img">
+      <div class="app-content"></div>
     </div>
+    <div class="app-content"></div>
   </section>
   <aside class="app-sidebar">
     <h2>Sidebar</h2>
   </aside>
-  <div class="clearfix"></div> 
 </div>
-<div class="clearfix"></div>
 <footer>
-  <h2>Footer</h2>
-  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
+  <div class="footer">
+    <h2>Footer</h2>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
+</div>
 </footer>
 </body>
 </html>

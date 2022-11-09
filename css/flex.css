@@ -1,0 +1,88 @@
+html {
+    margin: 0;
+    font-size: 14px;
+    font-family: Arial;
+    height: 100%;
+}
+body{
+    flex-direction:column;
+    min-height: 100vh;
+}
+.app-navbar > h2 {
+    margin: 0;
+}
+ .app-navbar > h2 > a{
+    color: var(--title-color-mobile);
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+header .app-nav-list  li a {
+    text-decoration: none;
+    color: var(--title-color-mobile);
+    flex-shrink: 1;
+}
+header .app-main-btn {
+    border: none;
+    padding: calc(var(--gutter-width) / 2) var(--gutter-width);
+    background: var(--button-color-mobile);
+    color: white;
+    text-transform: uppercase;
+}
+header , .app-nav-list , .app-navbar , footer  {
+    display: flex;
+}
+header , .app-main-btn ,.app-nav-list ,.app-navbar,.app-sidebar, footer , section {
+   margin: 0 var(--gutter-width);
+}
+.app-main-btn{
+    margin-top: 0 var(--gutter-width) 0 0;
+}
+header{
+    margin: var(--gutter-width) ;
+}
+.app-navbar{
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+ 
+}
+.app-nav-list{
+  
+    justify-content: space-around;
+    width: 100%;
+}
+h1{
+    text-align: center;
+}
+.app-bg-cont{
+    width: 100%;
+}
+.app-sidebar{
+    border: 1px solid #000;
+    box-sizing: border-box;
+    padding: var(--gutter-width);
+    margin-top: var(--gutter-width);
+    
+}
+.app-main-wrap .desc {
+    margin: calc(var(--gutter-width) / 2) 0 var(--gutter-width);
+}
+.app-main-wrap .app-bg-cont img{
+    width: 100%;
+}
+.app-main-wrap {
+    margin: 0 calc(var(--gutter-width) );
+    height: calc(100% - var(--header-height) - var(--footer-height));
+    box-sizing: border-box;
+}
+
+footer{
+    margin-top: auto;
+    text-align: center;
+    justify-content: center;
+}
+.footer{
+    height: var(--footer-height);
+    margin: var(--gutter-width) 0 0;
+}

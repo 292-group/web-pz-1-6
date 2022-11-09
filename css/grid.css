@@ -1,0 +1,88 @@
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: Arial;
+  }
+body{
+    box-sizing: border-box;
+    margin: 0 var(--gutter-width);
+    display: grid;
+    grid-template-columns: [line1] auto [line2] auto [line3] 20px;
+    grid-template-rows: [row1] 90px [row2] 1fr [row3] ;
+}
+header{
+    grid-column: line1 / line3;
+    grid-row: row1 / row2;
+    width: 100%;
+    margin:10px var(--gutter-width);
+}
+header a h2{
+    color: var(--title-color-mobile);
+}
+header a{
+    text-decoration: none;
+}
+.nav-checkbox{
+    display: grid;
+    grid-template-columns: 3fr 1fr;  
+    align-items: center;
+}
+.content-nav li{
+    display: inline-block;
+    padding-right: 10px;
+}
+.content-nav li a{
+    text-decoration: none;
+    color: var(--title-color-mobile);
+}
+.app-main-btn{
+    float: right;
+    border: none;
+    padding: calc(var(--gutter-width) / 2) var(--gutter-width);
+    background: var(--button-color-mobile);
+    color: white;
+    text-transform: uppercase;
+}
+.app-btn{
+    margin:0 var(--gutter-width);
+}
+.app-main{
+    display: grid;
+    margin-right: 20px;
+}
+.app-main-wrap{
+    display: grid; 
+    width: 100%;
+    margin: var(--gutter-width) var(--gutter-width) 0;
+    grid-column: line1 / line2;
+    grid-row: row2 / row3;
+}
+section h1 {
+    margin: 0 ;
+}
+section h1 , p{
+text-align: center;
+}
+section p {
+    margin: 20px 0;
+}
+.app-sidebar{
+    border: 1px solid #000;
+    box-sizing: border-box;
+    padding: var(--gutter-width);
+    margin:0 var(--gutter-width) 0 0;  
+}
+.app-main-wrap .app-bg-cont img{
+    width: 100%;
+}
+footer{
+    width: 100%;
+    grid-column: line1 / line3;
+    grid-row: row4 / row4;
+    text-align: center;
+    justify-content: center;
+    height: var(--footer-height);
+    margin: var(--gutter-width) 0 0;
+}
