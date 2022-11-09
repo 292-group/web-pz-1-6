@@ -16,7 +16,6 @@ html {
   footer, div, section, aside {
     padding: 2vw;
   }
-  
   header {
     grid-area: header;
     display: grid;

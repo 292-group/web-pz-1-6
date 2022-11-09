@@ -1,7 +1,7 @@
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 320px) {
   .app-sidebar{
- width: 100vw;
+width: 100vw;
   }
 }
 

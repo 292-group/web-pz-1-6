@@ -77,5 +77,4 @@ Scripts should be placed before closing body tag.
 * [Responsive Web Design - Media Queries](https://www.w3schools.com/css/css_rwd_mediaqueries.asp).
 * [Практическое применение FlexBox](https://habr.com/ru/post/242545/).
 
-
 git
