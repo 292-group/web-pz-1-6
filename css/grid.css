@@ -1,55 +1,49 @@
 body {
     display: grid;
-    grid-template: "header"
-                    "main"
-                    "footer";
-  }
-  
-  
-  .header {
-    grid-area: header; 
+    grid-template: "header" "main" "footer";
+}
+
+.header {
+    grid-area: header;
     display: grid;
-    grid-template: "logo button"
-                    "nav nav";
-  }
-  
-  .header > h2 {
+    grid-template: "logo button" "nav nav";
+}
+
+.header>h2 {
     grid-area: logo;
-  }
-  
-  .header > nav {
+}
+
+.header>nav {
     grid-area: nav;
-  }
-  
-  .header .app-nav-list {
+}
+
+.header .nav-list {
     display: grid;
     grid-template: "item item item";
     position: relative;
-  }
-  
-  .header > .button {
+}
+
+.header>.button {
     grid-area: button;
     position: absolute;
     top: 23px;
     right: 16px;
-  }
-  
-  .app-main {
+}
+
+.main-container {
     grid-area: main;
     display: grid;
-    grid-template: "content"
-                    "sidebar" 110px;
-  }
-  
-  .app-main .content {
+    grid-template: "content" "sidebar" 110px;
+}
+
+.main-container .content {
     grid-area: content;
-  }
-  
-  .app-main .app-sidebar {
+}
+
+.main-container .sidebar {
     grid-area: sidebar;
-  }
-  
-  
-  .footer {
+}
+
+.footer {
     grid-area: footer;
-  }  
+}
